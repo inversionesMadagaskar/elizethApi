@@ -16,6 +16,17 @@ const inmuebleSchema = new mongoose.Schema(
         baths:{type: Number , required:true },
         park:{type: Number , required:true },
         descLocation:{type: String , required:true },
+        aire:{type: String , required:true },
+        gas:{type: String , required:true },
+        agua:{type: String , required:true },
+        seguridad:{type: String , required:true },
+        calentador:{type: String , required:true },
+        planta:{type: String , required:true },
+        amoblado:{type: String , required:true },
+        cocina:{type: String , required:true },
+        jardin:{type: String , required:true },
+        balcon:{type: String , required:true },
+        antiguedad:{type: String , required:true },
         inStock:{type:Boolean, default:true}
     },
     {timestamps: true }

@@ -9,7 +9,6 @@ const inmuebleSchema = new mongoose.Schema(
         img:{type: Array },
         categories:{ type:String , required:true },
         location:{type: String , required:true },
-        linkLocation:{type: String , required:true },
         sizeOne:{type: Number , required:true },
         sizeTwo:{type: Number , required:true },
         rooms:{type: Number , required:true },
@@ -26,7 +25,7 @@ const inmuebleSchema = new mongoose.Schema(
         cocina:{type: String , required:true },
         jardin:{type: String , required:true },
         balcon:{type: String , required:true },
-        antiguedad:{type: String , required:true },
+        antiguedad:{type: Number , required:true },
         inStock:{type:Boolean, default:true}
     },
     {timestamps: true }
